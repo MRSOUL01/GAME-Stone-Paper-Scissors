@@ -30,20 +30,32 @@ elif computer == 2:
     print("Computer chose Paper")
 elif computer == 3:
     print("Computer chose Scissors")
+def wn():
+    print("you win!")
+
+def ln():
+    print("you lose!")
+
 # Compare
 if player == computer:
-    print("It's a tie!")
+    print("It's a tie!")            # 1. STONE, 2. PAPER, 3.SCISSORS
 elif player == 1 and computer == 3:
-    print("You win! Stone crushes Scissors.")
+    print(" Stone beats Scirror")
+    wn()
 elif player == 1 and computer == 2:
-    print("You lose! Paper covers Stone.")
+    print(" Paper beats Stone")
+    ln()
 elif player == 2 and computer == 1:
-    print("You win! Paper covers Stone.")
+    print(" Paper beats Stone")
+    wn()
 elif player == 2 and computer == 3:
-    print("You lose! Scissors cut Paper.")
+    print(" Scissor beats Paper")
+    ln()
 elif player == 3 and computer == 1:
-    print("You lose! Stone crushes Scissors.")
+    print(" Stone beats Scissors")
+    wn()
 elif player == 3 and computer == 2:
-    print("You win! Scissors cut Paper.")
+    print(" Paper beats Stone")
+    ln()
 
 print("Try again.")
