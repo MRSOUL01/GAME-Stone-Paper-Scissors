@@ -1,6 +1,8 @@
-# Module
+"""Module
+the start """
 import random as rd 
 
+#print statement
 print("Welcome to the Rock, Paper, Scissors game!")
 print("1. Stone")
 print("2. Paper")
@@ -30,6 +32,8 @@ elif computer == 2:
     print("Computer chose Paper")
 elif computer == 3:
     print("Computer chose Scissors")
+
+# use of def 
 def wn():
     print("you win!")
 
@@ -38,7 +42,7 @@ def ln():
 
 # Compare
 if player == computer:
-    print("It's a tie!")            # 1. STONE, 2. PAPER, 3.SCISSORS
+    print("It's a tie!")            
 elif player == 1 and computer == 3:
     print(" Stone beats Scirror")
     wn()
@@ -49,13 +53,13 @@ elif player == 2 and computer == 1:
     print(" Paper beats Stone")
     wn()
 elif player == 2 and computer == 3:
-    print(" Scissor beats Paper")
+    print(" Scissors beats Paper")
     ln()
 elif player == 3 and computer == 1:
     print(" Stone beats Scissors")
     wn()
 elif player == 3 and computer == 2:
-    print(" Paper beats Stone")
+    print(" Scissors beats Paper")
     ln()
-
+# the End 
 print("Try again.")
