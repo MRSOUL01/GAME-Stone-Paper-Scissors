@@ -42,7 +42,9 @@ def ln():
 
 # Compare
 if player == computer:
-    print("It's a tie!")            
+    print("It's a tie!")   
+    print(player)
+    print(computer)
 elif player == 1 and computer == 3:
     print(" Stone beats Scirror")
     wn()
@@ -61,5 +63,6 @@ elif player == 3 and computer == 1:
 elif player == 3 and computer == 2:
     print(" Scissors beats Paper")
     ln()
+    
 # the End 
 print("Try again.")
