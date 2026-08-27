@@ -4,6 +4,7 @@ import random as rd
 
 #print statement
 print("Welcome to the Rock, Paper, Scissors game!")
+print("choice how many rounds you want to play")
 print("1. Stone")
 print("2. Paper")
 print("3. Scissors")
