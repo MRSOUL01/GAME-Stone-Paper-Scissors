@@ -79,3 +79,4 @@ Some things I could add later:
 **Beginner Python Project**
 
 Built as a personal practice project while learning Python.
+next update will role before the 09-09-2026, surely it will have many features related which mentioned above.
