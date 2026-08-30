@@ -11,7 +11,7 @@ print("3. Scissors")
 
 rn = int(input("Enter how many rounds you want to play"))
 
-while rn = 1:
+while rn <= 0:
     
 
 #Player
@@ -69,6 +69,9 @@ while rn = 1:
     elif player == 3 and computer == 2:
         print(" Scissors beats Paper")
         ln()
+        break
+
+    rn = rn -1
     
 # the End 
 print("Try again.")
