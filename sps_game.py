@@ -12,7 +12,7 @@ print("3. Scissors")
 rn = int(input("Enter how many rounds you want to play"))
 
 while rn <= 0:
-    
+    print(f"you have {rn}rounds....")
 
 #Player
     ch = int(input("Enter your choice (1-3): "))
@@ -72,6 +72,7 @@ while rn <= 0:
         break
 
     rn = rn -1
-    
+    print(f"you have {rn} rounds left")
+
 # the End 
 print("Try again.")
