@@ -49,8 +49,6 @@ while rn >= 1:
 # Compare
     if player == computer:
         print("It's a tie!")   
-        print(player)
-        print(computer)
     elif player == 1 and computer == 3:
         print(" Stone beats Scirror")
         wn()
