@@ -9,15 +9,15 @@ print("1. Stone")
 print("2. Paper")
 print("3. Scissors")
 
-rn = int(input("Enter how many rounds you want to play"))
+rn = int(input("Enter how many rounds you want to play: "))
 
-while rn <= 0:
-    print(f"you have {rn}rounds....")
+while rn >= 1:
+    print(f"you have {rn} rounds....")
 
 #Player
     ch = int(input("Enter your choice (1-3): "))
     try:
-            if ch == 1:
+        if ch == 1:
             print("You chose Stone")
             player = 1
         elif ch == 2:
