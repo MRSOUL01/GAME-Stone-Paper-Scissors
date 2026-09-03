@@ -11,6 +11,18 @@ print("3. Scissors")
 
 rn = int(input("Enter how many rounds you want to play: "))
 
+# use of def 
+def wn():
+    print("you win!")
+
+def ln():
+    print("you lose!")
+
+# Scoring point 
+pl_sc = 0
+cm_sc = 0
+
+
 while rn >= 1:
     print(f"you have {rn} rounds....")
 
@@ -39,35 +51,47 @@ while rn >= 1:
     elif computer == 3:
         print("Computer chose Scissors")
 
-# use of def 
-    def wn():
-        print("you win!")
-
-    def ln():
-        print("you lose!")
-
 # Compare
     if player == computer:
-        print("It's a tie!")   
+        print("It's a tie!")
+        print("PLayer:Computer")
+        print(f"{pl_sc}:{cm_sc}")
     elif player == 1 and computer == 3:
         print(" Stone beats Scirror")
+        print("Player:Computer")
+        pl_sc+=1
+        print(f"{pl_sc}:{cm_sc}")
         wn()
     elif player == 1 and computer == 2:
         print(" Paper beats Stone")
+        print("Player:Computer")
+        cm_sc+=1
+        print(f"{pl_sc}:{cm_sc}")
         ln()
     elif player == 2 and computer == 1:
         print(" Paper beats Stone")
+        print("Player:Computer")
+        pl_sc+=1
+        print(f"{pl_sc}:{cm_sc}")
         wn()
     elif player == 2 and computer == 3:
         print(" Scissors beats Paper")
+        print("Player:Computer")
+        cm_sc+=1
+        print(f"{pl_sc}:{cm_sc}")
         ln()
     elif player == 3 and computer == 1:
         print(" Stone beats Scissors")
+        print("Player:Computer")
+        pl_sc+=1
+        print(f"{pl_sc}:{cm_sc}")
         wn()
     elif player == 3 and computer == 2:
         print(" Scissors beats Paper")
+        print("Player:Computer")
+        cm_sc+=1
+        print(f"{pl_sc}:{cm_sc}")
         ln()
-        break
 
     rn = rn -1
     print(f"you have {rn} rounds left")
