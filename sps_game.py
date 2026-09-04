@@ -22,7 +22,7 @@ def ln():
 pl_sc = 0
 cm_sc = 0
 
-
+# rounding and looping
 while rn >= 1:
     print(f"you have {rn} rounds....")
 
@@ -30,13 +30,13 @@ while rn >= 1:
     ch = int(input("Enter your choice (1-3): "))
     try:
         if ch == 1:
-            print("You chose Stone")
+            print("\n You chose Stone")
             player = 1
         elif ch == 2:
-            print("You chose Paper")
+            print("\n You chose Paper")
             player = 2
         elif ch == 3:
-            print("You chose Scissors")
+            print("\n You chose Scissors")
             player = 3
     except:
         print("choose the in the range of 1 of 3")
@@ -45,11 +45,11 @@ while rn >= 1:
     computer = rd.randint(1, 3)
 
     if computer == 1:
-        print("Computer chose Stone")
+        print("\n Computer chose Stone")
     elif computer == 2:
-        print("Computer chose Paper")
+        print("\n Computer chose Paper")
     elif computer == 3:
-        print("Computer chose Scissors")
+        print("\n Computer chose Scissors")
 
 # Compare
     if player == computer:
